@@ -1,10 +1,11 @@
 {
-  "name": "conversational-agent",
+  "name": "@deepkit/conversational-agent",
   "version": "1.0.0",
   "description": "A real-time conversational AI agent built with LiveKit Agents",
-  "main": "dist/index.js",
-  "module": "dist/index.module.js",
-  "types": "dist/index.d.ts",
+  "main": "agent.ts",
+  "bin": {
+    "conversational-agent": "./agent.ts"
+  },
   "type": "module",
   "scripts": {
     "build": "tsc",
@@ -17,10 +18,33 @@
     "livekit",
     "agents",
     "conversational-ai",
-    "voice-assistant"
+    "voice-assistant",
+    "real-time",
+    "ai",
+    "speech-to-text",
+    "text-to-speech"
   ],
-  "author": "",
+  "author": "DeepKit",
   "license": "Apache-2.0",
+  "homepage": "https://github.com/ILoveEthereum/DeepKit#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ILoveEthereum/DeepKit.git",
+    "directory": "conversational-agent"
+  },
+  "bugs": {
+    "url": "https://github.com/ILoveEthereum/DeepKit/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "agent.ts",
+    "client.html",
+    "README.md",
+    ".env.example",
+    "package.json"
+  ],
   "dependencies": {
     "@livekit/agents": "^0.7.8",
     "@livekit/agents-plugin-deepgram": "^0.5.7",
